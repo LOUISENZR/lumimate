@@ -23,13 +23,13 @@
             @include('partials.sidebar')
 
             <!-- Main Content -->
-            <div class="flex flex-col flex-1">
+            <div class="flex flex-col flex-1 overflow-hiden">
 
                 {{-- Navbar --}}
                 @include('partials.navbar')
 
                 {{-- Page Content --}}
-                <main class="flex-1 px-10 py-8">
+                <main class="flex-1 overflow-y-auto px-10 py-8">
                     @yield('content')
                 </main>
 

@@ -1,71 +1,91 @@
-<aside class="w-[260px] bg-[#F7F3EE] border-r border-[#E8E3DC] flex flex-col justify-between min-h-screen px-6 py-8">
+<aside class="w-[280px] bg-[#F7F3EE] border-r border-[#E8E1D8] px-8 py-10 flex flex-col justify-between">
 
-    {{-- Logo --}}
+    {{-- TOP --}}
     <div>
 
-        <div class="mb-12">
-            <h1 class="text-[32px] font-medium text-[#66558E] font-['Bodoni_Moda']">
+        {{-- LOGO --}}
+        <div class="mb-14">
+
+            <h1 class="text-[32px] text-[#66558E] font-medium font-['Bodoni_Moda']">
                 LumiMate
             </h1>
 
-            <p class="text-sm text-gray-500 mt-1">
+            <p class="text-sm text-[#7B7288] mt-2 tracking-[3px] uppercase">
                 Ritual Dashboard
             </p>
+
         </div>
 
-        {{-- Navigation --}}
+        {{-- MENU --}}
         <nav class="space-y-3">
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-[#DCCEF7] text-[#66558E] font-medium">
-                Dashboard
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl bg-[#DED0F8] text-[#66558E] font-medium">
+
+                <span>✦</span>
+                <span>Dashboard</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Consultation
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+
+                <span>✦</span>
+                <span>Consultation</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                My Products
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+
+                <span>✦</span>
+                <span>My Products</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Ingredient Analysis
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+
+                <span>✦</span>
+                <span>Ingredient Analysis</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Conflict Checker
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+
+                <span>✦</span>
+                <span>Conflict Checker</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Routine Planner
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+
+                <span>✦</span>
+                <span>Routine Planner</span>
+
             </a>
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Daily Tracker
-            </a>
+            <a href="#" class="flex items-center gap-4 px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
 
-            <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-                Progress Monitoring
+                <span>✦</span>
+                <span>Daily Tracker</span>
+
             </a>
 
         </nav>
 
     </div>
 
-    {{-- Bottom Menu --}}
+    {{-- BOTTOM --}}
     <div class="space-y-3">
 
-        <a href="#" class="block px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-            Notifications
-        </a>
-
-        <a href="#" class="block px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
+        <a href="#" class="block px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
             Settings
         </a>
 
-        <a href="#" class="block px-4 py-3 rounded-2xl hover:bg-[#EFE7FF] transition">
-            Profile
-        </a>
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+
+            <button class="w-full text-left px-5 py-4 rounded-2xl hover:bg-[#EFE7FF] transition">
+                Logout
+            </button>
+        </form>
 
     </div>
 
