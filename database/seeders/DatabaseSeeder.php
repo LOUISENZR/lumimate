@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             IngredientSeeder::class,
             IngredientConflictSeeder::class,
             ConsultationQuestionSeeder::class,
+            ConsultationQuestionOptionSeeder::class,
             RuleBaseSeeder::class,
         ]);
     }

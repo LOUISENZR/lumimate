@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class IngredientConflict extends Model
 {
-    //
+    protected $guarded = [];
 }
