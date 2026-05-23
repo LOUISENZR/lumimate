@@ -66,13 +66,19 @@
                 {{-- Tabs --}}
                 <div class="flex gap-8 border-b border-[#E0D9D0] pb-0 mb-10">
 
-                    <button class="text-[#4A3B6B] text-sm tracking-[2px] uppercase pb-4 border-b-2 border-[#4A3B6B] font-medium">
-                        Login
-                    </button>
+                <a
+                    href="{{ route('login') }}"
+                    class="text-[#4A3B6B] text-sm tracking-[2px] uppercase pb-4 border-b-2 border-[#4A3B6B] font-medium"
+                >
+                    Login
+                </a>
 
-                    <button class="text-[#9E9692] text-sm tracking-[2px] uppercase pb-4 border-b-2 border-transparent font-medium">
-                        Register
-                    </button>
+                <a
+                    href="{{ route('register') }}"
+                    class="text-[#9E9692] text-sm tracking-[2px] uppercase pb-4 border-b-2 border-transparent font-medium"
+                >
+                    Register
+                </a>
 
                 </div>
 
