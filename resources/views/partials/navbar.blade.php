@@ -1,4 +1,5 @@
-<nav class="px-10 py-8 flex items-center justify-between bg-[#F8F5F1] border-b border-[#E8E1D8]">
+<nav     :class="sidebarOpen ? 'px-10' : 'pl-20 pr-10'"
+    class="py-8 flex items-center justify-between bg-[#F8F5F1] border-b border-[#E8E1D8]">
 
     {{-- LEFT --}}
     <div>

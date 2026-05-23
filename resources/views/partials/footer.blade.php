@@ -1,25 +1,22 @@
-<footer class="px-10 py-10 border-t border-[#ECE7E2] bg-[#FAFAFC]">
+    <footer class="bg-[#1E1A24] px-16 py-12">
 
-    <div class="text-center">
+        <div class="flex flex-col items-center gap-6">
 
-        <h2 class="text-4xl font-['Bodoni_Moda'] text-[#66558E]">
-            LumiMate
-        </h2>
+            <p class="text-[20px] font-semibold font-['Bodoni_Moda'] text-[#EDE6F5] tracking-wide">
+                LumiMate
+            </p>
 
-        <p class="uppercase tracking-[4px] text-sm mt-4 text-gray-500">
-            The ritual is everything.
-        </p>
+            <div class="flex gap-8 text-xs text-[#7A7480] uppercase tracking-[2px]">
+                <a href="#" class="hover:text-[#C9B8E8] transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-[#C9B8E8] transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-[#C9B8E8] transition-colors">Skincare</a>
+                <a href="#" class="hover:text-[#C9B8E8] transition-colors">Rituals</a>
+            </div>
 
-        <div class="flex justify-center gap-8 mt-8 text-sm text-gray-500">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms</a>
-            <a href="#">Contact</a>
+            <p class="text-xs text-[#5C5568]">
+                © 2026 LumiMate Rituals. All rights reserved.
+            </p>
+
         </div>
 
-        <p class="mt-8 text-sm text-gray-400">
-            © 2026 LumiMate. All rights reserved.
-        </p>
-
-    </div>
-
-</footer>
+    </footer>

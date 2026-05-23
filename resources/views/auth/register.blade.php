@@ -5,77 +5,37 @@
 
         {{-- NAME --}}
         <div>
-            <label class="block text-sm text-[#66558E] mb-3 uppercase tracking-[2px]">
-                Full Name
-            </label>
-
-            <input
-                type="text"
-                name="name"
-                value="{{ old('name') }}"
-                required
-                autofocus
-                autocomplete="name"
-                class="block w-full rounded-2xl border border-[#DDD7CF] bg-transparent px-5 py-4 focus:outline-none focus:border-[#66558E]"
-            >
+            <x-input-label for="name" :value="__('Full Name')" />
+            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         {{-- EMAIL --}}
         <div class="mt-4">
-            <label class="block text-sm text-[#66558E] mb-3 uppercase tracking-[2px]">
-                Email
-            </label>
-
-            <input
-                type="email"
-                name="email"
-                value="{{ old('email') }}"
-                required
-                autocomplete="username"
-                class="block w-full rounded-2xl border border-[#DDD7CF] bg-transparent px-5 py-4 focus:outline-none focus:border-[#66558E]"
-            >
+            <x-input-label for="email" :value="__('Email')" />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
         {{-- PASSWORD --}}
         <div class="mt-4">
-            <label class="block text-sm text-[#66558E] mb-3 uppercase tracking-[2px]">
-                Password
-            </label>
-
-            <input
-                type="password"
-                name="password"
-                required
-                autocomplete="new-password"
-                class="block w-full rounded-2xl border border-[#DDD7CF] bg-transparent px-5 py-4 focus:outline-none focus:border-[#66558E]"
-            >
+            <x-input-label for="password" :value="__('Password')" />
+            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
         {{-- CONFIRM PASSWORD --}}
         <div class="mt-4">
-            <label class="block text-sm text-[#66558E] mb-3 uppercase tracking-[2px]">
-                Confirm Password
-            </label>
-
-            <input
-                type="password"
-                name="password_confirmation"
-                required
-                autocomplete="new-password"
-                class="block w-full rounded-2xl border border-[#DDD7CF] bg-transparent px-5 py-4 focus:outline-none focus:border-[#66558E]"
-            >
+            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+            <x-text-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
         {{-- BUTTON --}}
         <div class="flex items-center justify-end mt-6">
-
-            <button
-                type="submit"
-                class="bg-[#66558E] text-white px-8 py-4 rounded-2xl hover:opacity-90 transition"
-            >
-                Create Account
-            </button>
-
+            <x-primary-button>
+                {{ __('Create Account') }}
+            </x-primary-button>
         </div>
 
     </form>
